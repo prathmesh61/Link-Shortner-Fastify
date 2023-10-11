@@ -31,7 +31,7 @@ app.post<{ Body: { orginalLink: string; email: string } }>(
   }
 );
 
-// create route for redirecting to orginal link :- /api/shortner/:shortLink Method - GET
+// create route for redirecting to orginal link :- /api/:shortLink Method - GET
 app.get<{ Params: { shortLink: string } }>(
   "/api/:shortLink",
   async (request, reply) => {
